@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6506BF6426CCF4C9008BFE3B /* slipper.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 6506BF6326CCF4C9008BFE3B /* slipper.usdz */; };
 		6581DF5D26CA6A2800974BFA /* ARQuickLookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581DF5C26CA6A2800974BFA /* ARQuickLookApp.swift */; };
 		6581DF5F26CA6A2800974BFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581DF5E26CA6A2800974BFA /* ContentView.swift */; };
 		6581DF6126CA6A2900974BFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6581DF6026CA6A2900974BFA /* Assets.xcassets */; };
 		6581DF6426CA6A2900974BFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6581DF6326CA6A2900974BFA /* Preview Assets.xcassets */; };
 		6581DF6E26CA6A2900974BFA /* ARQuickLookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581DF6D26CA6A2900974BFA /* ARQuickLookTests.swift */; };
 		6581DF7826CA6A2900974BFA /* ARQuickLookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581DF7726CA6A2900974BFA /* ARQuickLookUITests.swift */; };
+		6581DF8526CA6A4100974BFA /* ARQuickLookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6581DF8426CA6A4100974BFA /* ARQuickLookView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6506BF6326CCF4C9008BFE3B /* slipper.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = slipper.usdz; sourceTree = "<group>"; };
 		6581DF5926CA6A2800974BFA /* ARQuickLook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARQuickLook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6581DF5C26CA6A2800974BFA /* ARQuickLookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARQuickLookApp.swift; sourceTree = "<group>"; };
 		6581DF5E26CA6A2800974BFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		6581DF6D26CA6A2900974BFA /* ARQuickLookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARQuickLookTests.swift; sourceTree = "<group>"; };
 		6581DF7326CA6A2900974BFA /* ARQuickLookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARQuickLookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6581DF7726CA6A2900974BFA /* ARQuickLookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARQuickLookUITests.swift; sourceTree = "<group>"; };
+		6581DF8426CA6A4100974BFA /* ARQuickLookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARQuickLookView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 			children = (
 				6581DF5C26CA6A2800974BFA /* ARQuickLookApp.swift */,
 				6581DF5E26CA6A2800974BFA /* ContentView.swift */,
+				6581DF8426CA6A4100974BFA /* ARQuickLookView.swift */,
+				6506BF6326CCF4C9008BFE3B /* slipper.usdz */,
 				6581DF6026CA6A2900974BFA /* Assets.xcassets */,
 				6581DF6226CA6A2900974BFA /* Preview Content */,
 			);
@@ -230,6 +236,7 @@
 			files = (
 				6581DF6426CA6A2900974BFA /* Preview Assets.xcassets in Resources */,
 				6581DF6126CA6A2900974BFA /* Assets.xcassets in Resources */,
+				6506BF6426CCF4C9008BFE3B /* slipper.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6581DF5F26CA6A2800974BFA /* ContentView.swift in Sources */,
+				6581DF8526CA6A4100974BFA /* ARQuickLookView.swift in Sources */,
 				6581DF5D26CA6A2800974BFA /* ARQuickLookApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
