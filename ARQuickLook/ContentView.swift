@@ -9,35 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var showingPreview = false
-    @State var allowsScaling = true
+    private let modelNames = ["slipper", "shoe", "franchshoe", "叉燒包"]
     
     var body: some View {
-        VStack {
-            Toggle("Allow Scaling", isOn: $allowsScaling)
-            
-            Button("Show Preview") {
-                showingPreview.toggle()
+        NavigationView {
+            List {
+                ForEach(modelNames.indices) { index in
+                    NavigationLink(destination: ARQuickLookView(name: modelNames[index]).navigationTitle(modelNames[index])) {
+                        ModelRow(name: modelNames[index])
+                    }
+                }
             }
-            .sheet(isPresented: $showingPreview) {
-                sheetView
-            }
+            .navigationTitle("模型列表")
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .padding()
     }
     
-    var sheetView: some View {
-        VStack {
-            HStack {
-                Button("Close") {
-                    showingPreview.toggle()
-                }
-                Spacer()
-            }
-            .padding()
-            
-            ARQuickLookView(name: "slipper", allowScaling: allowsScaling)
-        }
+}
+
+struct ModelRow: View {
+    
+    var name: String
+    
+    var body: some View {
+        Text(name)
     }
     
 }

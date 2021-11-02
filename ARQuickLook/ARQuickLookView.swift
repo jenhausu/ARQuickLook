@@ -12,7 +12,6 @@ import ARKit
 struct ARQuickLookView: UIViewControllerRepresentable {
     
     var name: String
-    var allowScaling: Bool
     
     func makeCoordinator() -> ARQuickLookView.Coordinator {
         Coordinator(self)
@@ -47,7 +46,7 @@ struct ARQuickLookView: UIViewControllerRepresentable {
             }
             
             let item = ARQuickLookPreviewItem(fileAt: fileURL)
-            item.allowsContentScaling = parent.allowScaling
+            item.allowsContentScaling = true
             return item
         }
     }
@@ -55,6 +54,6 @@ struct ARQuickLookView: UIViewControllerRepresentable {
 
 struct ARQuickLookView_Previews: PreviewProvider {
     static var previews: some View {
-        ARQuickLookView(name: "gramophone", allowScaling: true)
+        ARQuickLookView(name: "shoe")
     }
 }
